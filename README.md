@@ -32,6 +32,25 @@ Before you actually can run the app, you need to make sure that mongodb is runni
 
 run ```$ yo columbia-angular:deploy``` to setup both github and heroku automatically.
 
+**Note:** If your version of git is out of date, heroku may refuse to create your app for the reasons specified at https://blog.heroku.com/archives/2014/12/24/update_your_git_clients_on_windows_and_os_x and you may have to first update git. If you choose to do this with homebrew, which I recommend (for making upgrading in the future easier), you may have to set your path to use /usr/local/bin/ before using /usr/bin/ (the default).  You can do this by running:
+
+`$ brew sh`
+
+and should get the following message:
+
+```sh
+Your shell has been configured to use Homebrew's build environment:
+this should help you build stuff. Notably though, the system versions of
+gem and pip will ignore our configuration and insist on using the
+environment they were built under (mostly). Sadly, scons will also
+ignore our configuration.
+When done, type `exit'.
+brew \[\033[1;32m\]\w\[\033[0m\]$
+```
+
+Then restart your terminal.  If that doesn't fix your issue, refer to [this homebrew issue thread for additional workarounds](https://github.com/Homebrew/homebrew/issues/29843):
+
+
 The command uses the following to setup Github:
 
 ```zsh
