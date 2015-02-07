@@ -3,6 +3,9 @@
 var externalServicesPrompts = {
 
   prompts: [{ // default type is 'input'
+    name     : 'organizationname',
+    message  : 'Please enter your github username or organization'
+  }, {
     name     : 'awsAPIKey',
     message  : 'Please enter your AWS API Key:',
     default  : 'ENTER_AWS_KEY'
@@ -32,13 +35,14 @@ var externalServicesPrompts = {
     var prompts = this.prompts;
     generator.prompt(prompts, function(responses) {
 
-      generator.mandrillAPIKey = responses.mandrillAPIKey;
-      generator.awsAPIKey      = responses.awsAPIKey;
-      generator.awsSecret      = responses.awsSecret;
-      generator.s3BucketName   = responses.s3BucketName;
-      generator.s3Region       = responses.s3Region;
-      generator.adminLogin     = responses.adminLogin;
-      generator.adminPassword  = responses.adminPassword;
+      generator.organizationname = responses.organizationname;
+      generator.mandrillAPIKey   = responses.mandrillAPIKey;
+      generator.awsAPIKey        = responses.awsAPIKey;
+      generator.awsSecret        = responses.awsSecret;
+      generator.s3BucketName     = responses.s3BucketName;
+      generator.s3Region         = responses.s3Region;
+      generator.adminLogin       = responses.adminLogin;
+      generator.adminPassword    = responses.adminPassword;
 
       generator.log('mandrillAPIKey ' + generator.mandrillAPIKey);
       generator.log('awsAPIKey ' + generator.awsAPIKey);
