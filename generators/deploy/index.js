@@ -190,13 +190,14 @@
     this.log(chalk.bold.cyan('Pushing local config vars to heroku'));
     var child = exec('heroku config:push', { cwd: 'dist' }, function (err, stdout, stderr) {
       if (err) {
-        this.log(chalk.bold.red('You may need to install heroku-config plugin:'));
-        this.log(chalk.bold.red('$ heroku plugins:install git://github.com/ddollar/heroku-config.git'));
-        this.log.error(err);
+        console.log(chalk.bold.red('You may need to install heroku-config plugin:'));
+        console.log(chalk.bold.red('$ heroku plugins:install git://github.com/ddollar/heroku-config.git'));
+        console.log(err);
       }
       done();
     }.bind(this));
     child.stderr.on('data', function (data) {
+      this.log(data.toString());
       this.log('Failed to start child process.');
     });
     child.stdout.on('data', function(data) {
