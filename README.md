@@ -126,3 +126,12 @@ Inspirations:
 
 Go to https://www.npmjs.com/ and click on "create account".
 You must have an account on npm in order to publish modules
+
+#### Before publishing
+
+1. Test the version locally by:
+  a. linking the module to npm by running `$ npm link` inside the repo root
+  b. linking to the linked module by running `$ npm link <module-name>` from inside the directory you wish to use it in.
+2. Once you're ready to publish, run `$ npm unlink` inside repo root and `$npm unlink <module-name>` inside test dir so you don't still have the local version linked in.
+3. if this is the first time publishing run `$ npm publish`.
+4.  Otherwise, you must bump the version before running this command.  This should be done using the grunt bump and grunt autorelease commands specified above (eventually this should also publish to npm automatically).
