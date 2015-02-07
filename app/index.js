@@ -68,13 +68,15 @@
 
     install: function() {
       this.on('end', function () {
-        this.installDependencies({
-          skipInstall: this.options['skip-install'],
-          callback: function() {
-            // Emit a new event - dependencies installed
-            this.emit('dependenciesInstalled');
-          }.bind(this)
-        });
+        this.npmInstall('', {}, function () {
+          this.emit('npmInstalled');
+        }.bind(this));
+      });
+
+      this.on('npmInstalled', function () {
+        this.bowerInstall('', {}, function () {
+          this.emit('dependenciesInstalled');
+        }.bind(this));
       });
 
       // Now you can bind to the dependencies installed event
