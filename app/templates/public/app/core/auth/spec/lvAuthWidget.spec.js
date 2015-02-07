@@ -69,7 +69,7 @@
         // spyOn(scope, 'isAuthenticated').and.returnValue(false);
         // scope.$digest();
         // expect(scope.isAuthenticated).toHaveBeenCalled();
-        expect(element.html()).toContain('ng-click="displayLogin()">Login</a>');
+        expect(element.html()).toContain('ng-click="displayLogin()"');
       });
     });
 
