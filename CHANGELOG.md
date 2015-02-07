@@ -1,3 +1,26 @@
+<a name="1.1.2"></a>
+### 1.1.2 (2015-02-07)
+
+
+#### Bug Fixes
+
+* **index.js:**
+  * yeoman logger doesn't seem to be available in deploy child process, so log to co ([700051db](https://github.com/columbiajs/generator-columbia-angular/commit/700051db77bd11ffcd67216b2820e621bca55824))
+  * install npm and then bower to get correct messages for bower conflicts ([9a2ec76b](https://github.com/columbiajs/generator-columbia-angular/commit/9a2ec76b7c60c3f43b2a4652ebbe5be2902f6200))
+* **injector.js:** add in file checks to prevent injecting tests into index.html, which then get ug ([1ce74df2](https://github.com/columbiajs/generator-columbia-angular/commit/1ce74df27a4a3d0abcb2753c817d25cb30b2d7f2))
+* **lvAuthWidget.spec.js:** modify test for displayLogin so all tests pass, closes #16 ([eb44fa4f](https://github.com/columbiajs/generator-columbia-angular/commit/eb44fa4f6d900b3ebb746ad5927d0b0e3885748a))
+* **lvUserService.spec.js:** rename improperly named spec file, closes #26 ([ba11a914](https://github.com/columbiajs/generator-columbia-angular/commit/ba11a914f7b56385296b2c0e1f17ce26669ac717))
+* **nav-menu.html:** fix broken nav dropdown with new require attributes from angular-bootstrap, fixe ([ec1a14b3](https://github.com/columbiajs/generator-columbia-angular/commit/ec1a14b365c908f907cd7d320994057324467eda))
+* **package.json:** fix repository info so that the url enables conventional changelog to generate t ([c1e1a07e](https://github.com/columbiajs/generator-columbia-angular/commit/c1e1a07e167490f7c0f0b0292f65357dee88540b))
+* **style.scss:** use protocol-related url (by not specifying http) so it can be loaded in secure  ([d7f72ff6](https://github.com/columbiajs/generator-columbia-angular/commit/d7f72ff6e6e343ae3685d8e70e0c261b975fe88b))
+
+
+#### Features
+
+* **_package.json:** use organizationname for github url, update repo description, closes #13 ([393d9f1c](https://github.com/columbiajs/generator-columbia-angular/commit/393d9f1c03febfaca0d63a54e1a7a04c2c54b3ee))
+* **externalServicesPrompts.js:** add organizationname (github username or organization) to prompts ([e82b6833](https://github.com/columbiajs/generator-columbia-angular/commit/e82b68337263b246649462697e9c5db566c49090))
+
+
 <a name="1.1.1"></a>
 ### 1.1.1 (2014-11-23)
 
