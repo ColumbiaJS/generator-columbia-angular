@@ -120,3 +120,9 @@ Inspirations:
 
 * Originally forked from [leviathantech/generator-leviathan](https://github.com/leviathantech/generator-leviathan)
 * Codebase inspired by and originally based off of [DaftMonk/generator-angular-fullstack](https://github.com/DaftMonk/generator-angular-fullstack)
+
+
+### Publishing to npm
+
+Go to https://www.npmjs.com/ and click on "create account".
+You must have an account on npm in order to publish modules
