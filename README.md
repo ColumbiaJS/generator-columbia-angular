@@ -14,21 +14,23 @@ Install Yeoman:
 $ npm install -g yo
 ```
 
-To install generator-leviathan from npm, run:
+To install generator-columbia-angular from npm, run:
 
 ```bash
-$ npm install -g generator-leviathan
+$ npm install -g generator-columbia-angular
 ```
 
 Finally, initiate the generator:
 
 ```bash
-$ yo leviathan optionalAppName
+$ yo columbia-angular optionalAppName
 ```
+
+Before you actually can run the app, you need to make sure that mongodb is running.  In a separate terminal run `$ sudo mongod`, then run `$ grunt`.
 
 ### Recommended github and heroku setup:
 
-run ```$ yo leviathan:deploy``` to setup both github and heroku automatically.
+run ```$ yo columbia-angular:deploy``` to setup both github and heroku automatically.
 
 The command uses the following to setup Github:
 
