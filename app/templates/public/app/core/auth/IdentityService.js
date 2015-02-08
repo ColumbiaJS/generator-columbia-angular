@@ -13,7 +13,9 @@
       },
       getCurrentUser: getCurrentUser,
       updateCurrentUser: updateCurrentUser,
-      logoutCurrentUser: logoutCurrentUser
+      logoutCurrentUser: logoutCurrentUser,
+      isAuthenticated: isAuthenticated,
+      isAdmin: isAdmin
     };
 
     function getCurrentUser() {
@@ -48,6 +50,18 @@
 
     function logoutCurrentUser() {
       currentUser = {};
+    }
+
+    function isAuthenticated() {
+      return $auth.isAuthenticated();
+    }
+
+    function isAdmin() {
+      if (isAuthenticated()) {
+        return currentUser.hasOwnProperty('role') && currentUser.role === 'admin';
+      } else {
+        return false;
+      }
     }
 
   });
