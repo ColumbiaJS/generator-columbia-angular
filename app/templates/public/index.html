@@ -28,15 +28,17 @@
 </head>
 <body ng-app="app">
 
-  <lv-navbar></lv-navbar>
+  <cu-navbar></cu-navbar>
   <!--[if lt IE 7]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
   <section class="content">
-    This is the content
-    <div ng-view id="content" class="animate-fade-up"></div>
+      <div id="content" class="animate-fade-up">
+        <ui-view class="page-transition view-transition"></ui-view>
+      </div>
   </section>
+  <!-- <cu-footer></cu-footer> -->
   <footer class="container-fluid text-center">
     &copy: 2014 This is the footer
   </footer>
