@@ -1,3 +1,12 @@
+<a name="1.1.9"></a>
+### 1.1.9 (2015-02-08)
+
+
+#### Bug Fixes
+
+* **all_variables.scss:** try again with this compass task ([0e9f5822](https://github.com/columbiajs/generator-columbia-angular/commit/0e9f58226eae541a9a89d7d19769a421aaeec742))
+
+
 <a name="1.1.8"></a>
 ### 1.1.8 (2015-02-08)
 
