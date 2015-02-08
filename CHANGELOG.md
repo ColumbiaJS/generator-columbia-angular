@@ -1,3 +1,12 @@
+<a name="1.1.10"></a>
+### 1.1.10 (2015-02-08)
+
+
+#### Bug Fixes
+
+* **all:** comment out persistent problems for now ([f25bc43a](https://github.com/columbiajs/generator-columbia-angular/commit/f25bc43a5e24e11a142e9f63270d8880bf621c04))
+
+
 <a name="1.1.9"></a>
 ### 1.1.9 (2015-02-08)
 
