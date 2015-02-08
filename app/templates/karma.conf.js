@@ -17,6 +17,7 @@ module.exports = function(config) {
       // bower:js
       // endbower
       '../../test/test-app.js',
+      '**/*.module.js',
       '**/*.js',
       '../../test/specs/**/*.js',
       '../../test/specs/**/**/*.js',
