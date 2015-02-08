@@ -76,7 +76,7 @@
       this.on('npmInstalled', function () {
         this.bowerInstall('', {}, function () {
           this.emit('dependenciesInstalled');
-        }.bind(this));
+        }.bind(this)).on('error', this._bowerFailedCallback);
       });
 
       // Now you can bind to the dependencies installed event
@@ -86,6 +86,10 @@
       });
 
     },
+    _bowerFailedCallback: function(err) {
+      if (err) { this.log(chalk.bold(err)); }
+      this.log('BOWER TASK FAILED');
+    }
 
     _gruntFailedCallback: function(err) {
       if (err) { this.log(chalk.bold(err)); }
