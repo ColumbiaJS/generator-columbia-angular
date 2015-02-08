@@ -89,8 +89,7 @@
     _bowerFailedCallback: function(err) {
       if (err) { this.log(chalk.bold(err)); }
       this.log('BOWER TASK FAILED');
-    }
-
+    },
     _gruntFailedCallback: function(err) {
       if (err) { this.log(chalk.bold(err)); }
       this.log('GRUNT COMPASS TASK FAILED');
