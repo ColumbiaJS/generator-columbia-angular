@@ -6,7 +6,7 @@ md-toolbar.md-default-theme {
 
   .md-primary.md-white {
     background-color: #fff; color: black;
-    &:hover { background-color: $gray-lighter; }
+    // &:hover { background-color: $gray-lighter; }
   }
 }
 md-content.md-default-theme { background-color: none; }
