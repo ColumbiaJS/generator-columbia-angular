@@ -3,48 +3,59 @@
 
   var core = angular.module('app.core');
 
-  core.config(function ($locationProvider, $routeProvider, $authProvider) {
+  var clientIds = {
+    facebook: '689050897814697',
+    google: '245712720284-fc37j539heu5ktagshoj42qrr3qdfcog.apps.googleusercontent.com',
+    github: '0ba2600b1dbdb756688b',
+    linkedin: '7543vklf9n4pxx',
+    foursquare: 'MTCEJ3NGW2PNNB31WOSBFDSAD4MTHYVAZ1UKIULXZ2CVFC2K'
+  };
+
+  core.config(function ($locationProvider, $stateProvider,
+                        $urlRouterProvider, $authProvider) {
     $locationProvider.html5Mode(true);
-    $routeProvider
-      .when('/', {
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+      .state('app', {
+        url: '/',
         templateUrl: '/partials/layout/main.html'
       })
-      .when('/login', {
+      .state('login', {
+        url: '/login',
         templateUrl: '/partials/core/auth/login.html',
         controller: 'LoginCtrl'
       })
-      .when('/signup', {
+      .state('signup', {
+        url: '/signup',
         templateUrl: '/partials/core/auth/signup.html',
         controller: 'SignupCtrl'
       })
-      .when('/logout', {
+      .state('logout', {
+        url: '/logout',
         template: null,
         controller: 'LogoutCtrl'
       })
-      .when('/profile', {
+      .state('profile', {
+        url: '/profile',
         templateUrl: '/partials/core/user/profile.html',
         controller: 'ProfileCtrl',
         protected: true
-
-      })
-      .otherwise({
-        redirectTo: '/'
       });
 
     $authProvider.facebook({
-      clientId: '689050897814697'
+      clientId: clientIds.facebook
     });
 
     $authProvider.google({
-      clientId: '155132075923-u7kk1hoe82hgb9aha1esr8g0ujnopl6o.apps.googleusercontent.com'
+      clientId: clientIds.google
     });
 
     $authProvider.github({
-      clientId: '0ba2600b1dbdb756688b'
+      clientId: clientIds.github
     });
 
     $authProvider.linkedin({
-      clientId: '77cw786yignpzj'
+      clientId: clientIds.linkedin
     });
 
     $authProvider.twitter({
@@ -54,7 +65,7 @@
     $authProvider.oauth2({
       name: 'foursquare',
       url: '/auth/foursquare',
-      clientId: 'MTCEJ3NGW2PNNB31WOSBFDSAD4MTHYVAZ1UKIULXZ2CVFC2K',
+      clientId: clientIds.foursquare,
       redirectUri: window.location.origin,
       authorizationEndpoint: 'https://foursquare.com/oauth2/authenticate'
     });
