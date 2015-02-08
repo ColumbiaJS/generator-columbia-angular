@@ -1,6 +1,8 @@
 (function() {
   'use strict';
 
+  var clientApp = 'public/app/';
+
   module.exports = {
     options: {},
     scripts: {
