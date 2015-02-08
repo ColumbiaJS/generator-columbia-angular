@@ -1,3 +1,12 @@
+<a name="1.1.5"></a>
+### 1.1.5 (2015-02-07)
+
+
+#### Bug Fixes
+
+* **index.js:** careless error in method, everything run through and checks out ([7023a1aa](https://github.com/columbiajs/generator-columbia-angular/commit/7023a1aaecfc21eba824852fc1aab0b3fcefd8c7))
+
+
 <a name="1.1.4"></a>
 ### 1.1.4 (2015-02-07)
 
