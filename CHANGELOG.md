@@ -1,3 +1,27 @@
+<a name="1.1.6"></a>
+### 1.1.6 (2015-02-08)
+
+
+#### Bug Fixes
+
+* **_bower.json:** rearrange order of dev dependencies in generated app's bower.json so grunt-injec ([e7ed87cc](https://github.com/columbiajs/generator-columbia-angular/commit/e7ed87ccea9807564deed1250bb54f5d510c5406))
+
+
+#### Features
+
+* **AuthCtrl.js:** add methods from IdentityService for easier integration of auth logic ([fa6e0c34](https://github.com/columbiajs/generator-columbia-angular/commit/fa6e0c34ebf1833e8777e47dcd68ad7025213cd0))
+* **IdentityService:** improve isAuthenticated function, add isAdmin() ([9f064410](https://github.com/columbiajs/generator-columbia-angular/commit/9f064410e4a1556061b9ec72fb5f38cf160f367d))
+* **app.config.js:** placeholder ui-router route for admin view with user list to be implemented in w ([0676b930](https://github.com/columbiajs/generator-columbia-angular/commit/0676b93060ad78b277762e8f728a5a9c50cf21be))
+* **auth-widget.html:** implement fully functional auth-widget, modify tests for new design ([958f9533](https://github.com/columbiajs/generator-columbia-angular/commit/958f953365f411be000ae3aeac22baeb21b6d98a))
+* **config.js:** migrate core routes to ui-router ([56f662d9](https://github.com/columbiajs/generator-columbia-angular/commit/56f662d9d2c29ed5ef875d4d4a1dc6f80dd2664c))
+* **cuNavbar.js:** rename lvNavbar and give it a significant controller ([b87997ad](https://github.com/columbiajs/generator-columbia-angular/commit/b87997ad54e8fbffb99230bee4d65bf2eacd5a9f))
+* **index.html:** implement ui-view in index.html ([1702be67](https://github.com/columbiajs/generator-columbia-angular/commit/1702be671f0d3d3fd662f64260a09bfa6d9b4941))
+* **injector.js:** automate proper placement of modules by injector using .module.js suffix ([57b5a413](https://github.com/columbiajs/generator-columbia-angular/commit/57b5a413a369aa19a4cda785337a94e36cd5d28f))
+* **karma.conf.js:** enable module loading first with new naming scheme - *.module.jjs ([3fe80fcc](https://github.com/columbiajs/generator-columbia-angular/commit/3fe80fcc96c8a505c6912dd66204c8bafddf13ad))
+* **module:** rename all modules to *.module.js so regexp injector and karma can order them, c ([06f92a00](https://github.com/columbiajs/generator-columbia-angular/commit/06f92a00271b127a0396e0a38d53b4d6165ac974))
+* **navbar.html:** update navbar.html, adding placeholders for directives to build ([71a7a7e4](https://github.com/columbiajs/generator-columbia-angular/commit/71a7a7e4b4cadb5f5d5d77c2c0bc42f68e28b82d))
+
+
 <a name="1.1.5"></a>
 ### 1.1.5 (2015-02-07)
 
