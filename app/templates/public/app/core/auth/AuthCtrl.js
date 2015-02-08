@@ -3,11 +3,11 @@
 
   var appCore = angular.module('app.core');
   appCore.controller('AuthCtrl', function($scope, $log, $auth, IdentityService, ngDialog, logger) {
-    $scope.isAuthenticated = function() {
-      return $auth.isAuthenticated();
-    };
 
-    $scope.identity = IdentityService;
+    $scope.isAdmin = IdentityService.isAdmin;
+    $scope.isAuthenticated = IdentityService.isAuthenticated;
+    $scope.getCurrentUser = IdentityService.getCurrentUser;
+    $scope.currentUser = IdentityService.currentUser;
 
     $scope.displaySignup = function() {
       ngDialog.open({
