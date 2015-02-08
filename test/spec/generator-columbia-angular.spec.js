@@ -11,7 +11,7 @@
       TEMP_DIR_NAME   = 'temp',
       ASYNC_TIMEOUT   = 20000;
 
-  describe('leviathan generator', function() {
+  describe('columbia-angular generator', function() {
     var generator;
     var defaultOptions = {
       build: 'grunt',
