@@ -1,3 +1,12 @@
+<a name="1.1.8"></a>
+### 1.1.8 (2015-02-08)
+
+
+#### Bug Fixes
+
+* **style.scss:** rename scss files so that _variables.scss comes first and compass:dist task does ([8b295685](https://github.com/columbiajs/generator-columbia-angular/commit/8b2956850995df70376692a8bdae33577644aed4))
+
+
 <a name="1.1.7"></a>
 ### 1.1.7 (2015-02-08)
 
