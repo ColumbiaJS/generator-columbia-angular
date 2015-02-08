@@ -1,3 +1,17 @@
+<a name="1.1.7"></a>
+### 1.1.7 (2015-02-08)
+
+
+#### Bug Fixes
+
+* **injector.js:** left out clientApp var ([68c17629](https://github.com/columbiajs/generator-columbia-angular/commit/68c17629fa997e5610880176b1a6ef2a81b27ae4))
+
+
+#### Features
+
+* **app.config.js:** file was never saved on previous update of app.config with ui-router ([fa79b45d](https://github.com/columbiajs/generator-columbia-angular/commit/fa79b45d588970b632147cca9d3882627bcb1860))
+
+
 <a name="1.1.6"></a>
 ### 1.1.6 (2015-02-08)
 
