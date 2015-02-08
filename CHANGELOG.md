@@ -1,3 +1,12 @@
+<a name="1.1.4"></a>
+### 1.1.4 (2015-02-07)
+
+
+#### Bug Fixes
+
+* **_package.json:** bump version of grunt-ng-annotate to 0.9.2 to successfully annotate app ([2ec363ab](https://github.com/columbiajs/generator-columbia-angular/commit/2ec363ab37a28f74b86914fe5da677d7dc2f2d2a))
+
+
 <a name="1.1.3"></a>
 ### 1.1.3 (2015-02-07)
 
