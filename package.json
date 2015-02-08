@@ -21,9 +21,6 @@
   "scripts": {
     "test": "mocha"
   },
-  "files": [
-    "app"
-  ],
   "keywords": [
     "yeoman-generator",
     "angular",
@@ -33,8 +30,13 @@
     "meanstack",
     "mongodb",
     "mongo",
+    "express",
+    "scaffold",
     "framework",
     "fullstack",
+    "front-end",
+    "back-end",
+    "yeoman",
     "yo"
   ],
   "dependencies": {
