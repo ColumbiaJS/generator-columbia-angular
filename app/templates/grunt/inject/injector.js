@@ -15,15 +15,12 @@
       },
       files: {
         'public/index.html': [
-          'public/app/app.js', // alternatively this can be specified in index.html and ignored here
-          'public/app/*.js',
-          '!public/app/*.spec.js',
-          'public/app/components/*.js',
-          '!public/app/components/*.spec.js',
-          'public/app/**/*.js',
-          '!public/app/**/*.spec.js',
-         '!{.tmp,public}/app/**/*.spec.js',
-         '!{.tmp,public}/app/**/*.mock.js'
+          clientApp + '**/*.module.js',
+          clientApp + '**/*.js',
+          '!' + clientApp + '**/*.spec.js',
+          '!' + clientApp + '**/*.mock.js',
+          '!{.tmp,public}/app/**/*.spec.js',
+          '!{.tmp,public}/app/**/*.mock.js'
         ]
       }
     },
