@@ -5,8 +5,14 @@
 // }
 
 // Bootstrap overrides and other global vars
-$sans-font-family: 'Lato', verdana, arial, helvetica, sans-serif;
+$sans-font-family: 'Futura PT Book', 'Lato', verdana, arial, helvetica, sans-serif;
 $sans-font-weight: 200;
+$sans-font-weight: 200;
+
+// custom
+$border-color: #eee;
+$border-radius: 3px;
+$header-md-height: 100px;
 
 // custom
 $border-color: #eee;
@@ -25,9 +31,13 @@ $warn: #fcc633; $warn-light: #fcf8e3;
 $gray-darker: #222222;
 $gray-dark: #333333;
 $gray: #555555;
-$gray-light: #999999;
-$gray-lighter: #eeeeee;
-
+$gray-lighten: #777777;
+$gray-light: #9C9999;
+$gray-lighter-dark: #BEBEBE;
+// $gray-lighter: #eeeeee; ADJUST BECAUSE gray-lightest can't be seen on mac
+$gray-lighter: #dadada;
+// $gray-lightest: #FAFAFA; CAN'T BE SEEN ON DELL DISPLAY THOUGH PERFECT FOR MAC
+$gray-lightest: #EDEDED;
 
 // Brand Colors
 $brand-primary: #000000;
@@ -277,4 +287,3 @@ $list-group-active-border: $list-group-active-bg;
 $list-group-active-text-color: lighten($list-group-active-bg, 40%);
 $list-group-link-color: #555;
 $list-group-link-heading-color: #333;
-
