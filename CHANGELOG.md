@@ -1,3 +1,12 @@
+<a name="1.1.11"></a>
+### 1.1.11 (2015-02-17)
+
+
+#### Features
+
+* **index.js:** provide canned responses for prompts, remove current prompts to speed up generat ([7c6830a0](https://github.com/columbiajs/generator-columbia-angular/commit/7c6830a075a4f7a4e024bc9dd6b08c7f6ac6578c))
+
+
 <a name="1.1.10"></a>
 ### 1.1.10 (2015-02-08)
 
