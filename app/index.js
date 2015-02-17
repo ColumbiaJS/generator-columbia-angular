@@ -12,7 +12,7 @@
       keyGenerator            = require('../utils/keyGenerator');
 
 
-  var LeviathanGenerator = yeoman.generators.Base.extend({
+  var ColumbiaAngularGenerator = yeoman.generators.Base.extend({
     init: function () {
       this.argument('name', { type: String, required: false });
       this.appname = this.name || path.basename(process.cwd());
@@ -33,16 +33,32 @@
                ' an express server and a MongoDB data store.');
     },
 
-    buildPrompts: function () {
-      buildPrompts.prompt(this); // pass in generator to buildPrompts module
-    },
+    // buildPrompts: function () {
+    //   buildPrompts.prompt(this); // pass in generator to buildPrompts module
+    // },
 
-    clientPrompts: function () {
-      clientPrompts.prompt(this);
-    },
+    // clientPrompts: function () {
+    //   clientPrompts.prompt(this);
+    // },
 
-    externalServicesPrompts: function () {
-      externalServicesPrompts.prompt(this);
+    // externalServicesPrompts: function () {
+    //   externalServicesPrompts.prompt(this);
+    // },
+    // replaces currently unnecessary prompts
+    cannedResponses: function () {
+      this.build = 'Grunt';
+      this.filters.Grunt = true;
+      this.stylesheet = 'Sass';
+      this.filters.Sass = true;
+      this.angularModules = ['angular-animate', 'angular-resource', 'angular-mocks', 'angular-sanitize'];
+      this.organizationname = 'default';
+      this.mandrillAPIKey   = 'mandrillAPIKey';
+      this.awsAPIKey        = 'awsAPIKey';
+      this.awsSecret        = 'awsSecret';
+      this.s3BucketName     = 's3BucketName';
+      this.s3Region         = 's3Region';
+      this.adminLogin       = 'adminLogin';
+      this.adminPassword    = 'adminPassword';
     },
 
     saveSettings: function() {
@@ -97,7 +113,7 @@
 
   });
 
-  LeviathanGenerator.prototype._processDirectory = function(source, destination) {
+  ColumbiaAngularGenerator.prototype._processDirectory = function(source, destination) {
       var root = this.isPathAbsolute(source) ? source : path.join(this.sourceRoot(), source);
       var files = this.expandFiles('**', { dot: true, cwd: root });
       this.log(files);
@@ -127,6 +143,6 @@
       }
   };
 
-  module.exports = LeviathanGenerator;
+  module.exports = ColumbiaAngularGenerator;
 
 })();
