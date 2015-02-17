@@ -1,7 +1,8 @@
 language: node_js
 node_js:
-  - '0.10'
+  - "0.12"
+  - "0.11"
+  - "0.10"
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-leviathan' ]; then cd .. && eval "mv $currentfolder generator-leviathan" && cd generator-leviathan; fi
-
+  - if [ "$currentfolder" != 'generator-columbia-angular' ]; then cd .. && eval "mv $currentfolder generator-columbia-angular" && cd generator-columbia-angular; fi
