@@ -1,4 +1,4 @@
-# generator-leviathan [![Build Status](https://secure.travis-ci.org/leviathantech/generator-leviathan.png?branch=master)](https://travis-ci.org/leviathantech/generator-leviathan)
+# generator-columbia-angular
 
 [Yeoman](http://yeoman.io) generator that scaffolds out a full stack Javascript web app using [angularjs](https://angularjs.org/), Grunt and Bower, Node and Express, MongoDB and Redis.
 
