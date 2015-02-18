@@ -1,6 +1,6 @@
 {
   "name": "generator-columbia-angular",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Opinionated Yeoman Generator for AngularJS applications with an Express Sever and a MongoDB backend",
   "license": "MIT",
   "main": "app/index.js",
