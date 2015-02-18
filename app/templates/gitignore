@@ -2,6 +2,7 @@
 dist/
 public/stylesheets/css
 public/stylesheets/.sass-cache
+*.sass-cache
 public/bower_components/
 npm-debug.log
 info.md
