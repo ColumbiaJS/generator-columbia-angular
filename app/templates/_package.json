@@ -43,7 +43,6 @@
     "passport-twitter": "^1.0.2",
     "express-session": "^1.7.2",
     "composable-middleware": "^0.3.0",
-    "grunt": "^0.4.5",
     "ejs": "^1.0.0",
     "jwt-simple": "^0.2.0",
     "bcryptjs": "^2.0.2",
