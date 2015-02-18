@@ -1,3 +1,12 @@
+<a name="1.2.3"></a>
+### 1.2.3 (2015-02-18)
+
+
+#### Features
+
+* **index.js:** get rid of annoying Heroku deployment messages, add docs for hub ([67f0c1bd](https://github.com/columbiajs/generator-columbia-angular/commit/67f0c1bd5d991de360470f83d558651172a01ecc))
+
+
 <a name="1.2.2"></a>
 ### 1.2.2 (2015-02-18)
 
