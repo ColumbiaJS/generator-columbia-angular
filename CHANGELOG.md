@@ -1,3 +1,12 @@
+<a name="1.2.2"></a>
+### 1.2.2 (2015-02-18)
+
+
+#### Bug Fixes
+
+* **.bowerrc:** revert to old behavior, interactive false breaks bower install ([4d33caa4](https://github.com/columbiajs/generator-columbia-angular/commit/4d33caa49703f36e89cc659762d12bf599634dcc))
+
+
 <a name="1.2.1"></a>
 ### 1.2.1 (2015-02-18)
 
