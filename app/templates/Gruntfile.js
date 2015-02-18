@@ -76,7 +76,22 @@
 
       /* VERSION AND RELEASE */
       release      : require('./grunt/release/release'),
-      changelog    : require('./grunt/release/changelog')
+      changelog    : require('./grunt/release/changelog'),
+      buildcontrol: {
+        options: {
+          dir: 'dist',
+          commit: true,
+          push: true,
+          connectCommits: false,
+          message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+        },
+        heroku: {
+          options: {
+            remote: 'heroku',
+            branch: 'master'
+          }
+        }
+      }
     };
 
 
