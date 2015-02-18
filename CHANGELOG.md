@@ -1,3 +1,12 @@
+<a name="1.2.1"></a>
+### 1.2.1 (2015-02-18)
+
+
+#### Bug Fixes
+
+* **.bowerrc:** add interactive false for bowerrc so that it resolves automatically ([99c90b5d](https://github.com/columbiajs/generator-columbia-angular/commit/99c90b5d7240281685f42c77a1023f604bd59b7c))
+
+
 <a name="1.2.0"></a>
 ## 1.2.0 (2015-02-18)
 
