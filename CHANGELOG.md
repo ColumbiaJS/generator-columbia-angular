@@ -1,3 +1,12 @@
+<a name="1.1.12"></a>
+### 1.1.12 (2015-02-18)
+
+
+#### Bug Fixes
+
+* **profile.html:** add closing div for profile, fix broken view ([718e45e3](https://github.com/columbiajs/generator-columbia-angular/commit/718e45e3f150b789c4343cff20a053dea86e26e8))
+
+
 <a name="1.1.11"></a>
 ### 1.1.11 (2015-02-17)
 
