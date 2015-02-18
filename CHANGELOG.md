@@ -1,3 +1,12 @@
+<a name="1.1.14"></a>
+### 1.1.14 (2015-02-18)
+
+
+#### Bug Fixes
+
+* **gitignore:** gitignore must include *.sass-cache ([5127b0cc](https://github.com/columbiajs/generator-columbia-angular/commit/5127b0cc0af3eebad6e9c3e35a8da5344b0d8d41))
+
+
 <a name="1.1.13"></a>
 ### 1.1.13 (2015-02-18)
 
