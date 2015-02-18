@@ -1,11 +1,10 @@
 ## <%= _.titleize(_.humanize(appname)) %>
 
-[![Code Climate](https://codeclimate.com/github/leviathantech/<%= appname %>/badges/gpa.svg)](https://codeclimate.com/github/leviathantech/<%= appname %>)
-
 ## TOC  <a name="toc"></a>
 
 <!-- MarkdownTOC depth=0 -->
 
+- [After Building](#after-building)
 - [MEAN SCAFFOLD](#mean-scaffold)
   - [(MONGODB, EXPRESS, ANGULAR, NODE)](#mongodb-express-angular-node)
 - [APPLICATION CORE](#application-core)
@@ -43,6 +42,17 @@
 <!-- /MarkdownTOC -->
 
 
+#### After Building
+
+After running yo columbia-angular:deploy to build this app you should see:
+Your app should now be live. To view it run
+  cd dist && heroku open
+After app modification run:
+  grunt build
+Then deploy with:
+  grunt buildcontrol:heroku
+
+Use grunt build and grunt buildcontrol:heroku to deploy this app again.
 
 
 MEAN SCAFFOLD
