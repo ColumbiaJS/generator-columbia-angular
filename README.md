@@ -6,8 +6,60 @@
 
 ### Using this generator:
 
+Pre-reqs:
+
+This generator uses Sass with Compass for preprocessing stylesheets.  In order to make use of this feature, you need to have ruby, sass and compass installed.  I personally use rbenv for managing ruby.  I also use nvm for managing node:
+
+brew install rbenv
+brew install rbenv-gem-rehash
+
+1. Install ruby
+2. Install Sass and Compass
+3. While we're at it, let's just install a bunch of useful gems:
+
+```sh
+gem install sass
+gem install compass
+```
+
+```sh
+# you may have to install compass with the --pre flag and compass-rails
+gem install compass --pre
+gem install compass-rails
+gem install bundler foreman pg rails thin --no-rdoc --no-ri
+gem install redcarpet pygments.rb
+```
+
+You also need to have grunt-cli and blower installed globally.  Here are my current global npm installs:
+
+- babel@4.1.1
+- bower@1.3.12 invalid
+- generator-angular@0.11.1
+- generator-angular-fullstack@2.0.13
+- generator-angularfire@0.9.1-4
+- generator-columbia-angular@1.1.11 -> /Users/lev/git/github/columbiajs/generator-columbia-angular
+- generator-karma@0.9.0
+- gh@1.9.4
+- grunt-cli@0.1.13
+- gulp@3.8.11
+- instant-markdown-d@0.1.0
+- karma-cli@0.0.4
+- mocha@2.1.0
+- npm@2.5.1
+- opn@1.0.1
+- yeoman@0.9.6
+- yo@1.4.5
+
 [If you're not familiar with Yeoman and want to learn more](http://yeoman.io/learning/index.html)
 [If you want to build your own generator](http://yeoman.io/authoring/index.html)
+
+Finally, make sure you don't need sudo privileges to run either `gem install` or `npm install`:
+
+http://www.wenincode.com/installing-node-jsnpm-without-sudo/
+
+http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/
+
+For gems, use rbenv
 
 Install Yeoman:
 ```bash

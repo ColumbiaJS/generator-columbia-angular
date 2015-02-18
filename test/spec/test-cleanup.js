@@ -4,17 +4,17 @@
   var helpers = require('yeoman-generator').test;
   var assert = require('yeoman-generator').assert;
 
-  describe('leviathan:cleanup', function () {
+  describe('columbia-angular:cleanup', function () {
     beforeEach(function (done) {
       helpers.testDirectory(path.join(__dirname, '../temp'), function (err) {
         if (err) {
           return done(err);
         }
-        var name = 'leviathan:app',
+        var name = 'columbia-angular:app',
             dependencies = ['../../app'],
             args = ['ApplicationName'];
         this.app = helpers.createGenerator(name, dependencies, args);
-        this.cleanup = helpers.createGenerator('leviathan:cleanup', [
+        this.cleanup = helpers.createGenerator('columbia-angular:cleanup', [
           '../../generators/cleanup'
         ]);
         done();

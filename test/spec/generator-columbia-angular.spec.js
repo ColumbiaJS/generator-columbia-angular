@@ -25,22 +25,22 @@
       ],
       awsAPIKey: 'A5JHDNEI846HFNF',
       awsSecret: 'pioansd495hDJHf94nad8',
-      s3BucketName: 'leviathan-app-uploads',
+      s3BucketName: 'columbia-app-uploads',
       s3Region: 'US Standard',
       herokuAppName: 'isolate-chamber-3450'
     };
 
 
     beforeEach(function (done) {
-      var name = 'leviathan:app',
+      var name = 'columbia-angular:app',
           dependencies = ['../../app'],
-          args = ['LeviathanAppName'];
+          args = ['ColumbiaAppName'];
 
       helpers.testDirectory(path.join(__dirname, '../' + TEMP_DIR_NAME), function(err) {
         if (err) { return done(err); }
 
         generator = helpers.createGenerator(name, dependencies, args);
-        generator.options['skip-install'] = true; // install should be loaded in fixtures
+        generator.options.skipInstall = true; // install should be loaded in fixtures
         done();
       }.bind(this));
     });

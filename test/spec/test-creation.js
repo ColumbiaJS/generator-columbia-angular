@@ -12,7 +12,7 @@
       TEMP_DIR_NAME   = 'temp',
       ASYNC_TIMEOUT   = 20000;
 
-  describe('leviathan generator creation', function () {
+  describe('columbia-angular generator creation', function () {
     var generator;
     var defaultOptions = {
       build: 'grunt',
@@ -27,7 +27,7 @@
     };
 
     beforeEach(function (done) {
-      var name = 'leviathan:app',
+      var name = 'columbia-angular:app',
           dependencies = ['../../app'],
           args = ['ApplicationName'];
       helpers.testDirectory(path.join(__dirname, '../' + TEMP_DIR_NAME), function (err) {
@@ -40,7 +40,7 @@
         console.log('NO ERROR');
 
         generator = helpers.createGenerator(name, dependencies, args);
-        generator.options['skip-install'] = true; // install should be loaded in fixtures
+        generator.options.skipInstall = true; // install should be loaded in fixtures
         done();
       }.bind(this));
     });
@@ -55,7 +55,7 @@
       ];
 
       helpers.mockPrompt(generator, defaultOptions);
-      generator.options['skip-install'] = true;
+      generator.options.skipInstall = true;
       generator.run({}, function () {
         helpers.assertFile(expected);
         done();
@@ -65,7 +65,7 @@
     // it('runs the compass task and creates a style.css file', function(done) {
     //   var expected = ['public/stylesheets/css/style.css'];
     //   helpers.mockPrompt(generator, defaultOptions);
-    //   generator.options['skip-install'] = true;
+    //   generator.options.skipInstall = true;
     //   generator.run({}, function() {
     //     helpers.assertFile(expected);
     //     done();
@@ -74,7 +74,7 @@
 
     it('contains the app name in the README.md', function(done) {
       helpers.mockPrompt(generator, defaultOptions);
-      generator.options['skip-install'] = true;
+      generator.options.skipInstall = true;
       generator.run({}, function () {
         assert.fileContent('README.md', /Application Name/);
         done();
@@ -83,7 +83,7 @@
 
     it('contains the app name in the package.json', function(done) {
       helpers.mockPrompt(generator, defaultOptions);
-      generator.options['skip-install'] = true;
+      generator.options.skipInstall = true;
       generator.run({}, function () {
         assert.fileContent('package.json', /application-name/);
         done();
