@@ -1,3 +1,12 @@
+<a name="1.1.15"></a>
+### 1.1.15 (2015-02-18)
+
+
+#### Bug Fixes
+
+* **_bower.json:** add angular-bootstrap back in ([1d739504](https://github.com/columbiajs/generator-columbia-angular/commit/1d73950419b099f8a982533a76c4f192184cf98b))
+
+
 <a name="1.1.14"></a>
 ### 1.1.14 (2015-02-18)
 
