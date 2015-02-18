@@ -1,3 +1,17 @@
+<a name="1.2.0"></a>
+## 1.2.0 (2015-02-18)
+
+
+#### Bug Fixes
+
+* **_README.md:** remove broken code climate link, add info about deploying to heroku with grunt b ([adad2700](https://github.com/columbiajs/generator-columbia-angular/commit/adad27000d5695683ffb3aff1abf94a6e258a473))
+
+
+#### Features
+
+* **Gruntfile.js:** add buildcontrol support for heroku ([56eb4bc9](https://github.com/columbiajs/generator-columbia-angular/commit/56eb4bc919a1cbdc2013d1b11fb93f8bdd20b7b5))
+
+
 <a name="1.1.15"></a>
 ### 1.1.15 (2015-02-18)
 
