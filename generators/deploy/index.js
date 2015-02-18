@@ -273,7 +273,7 @@
     }.bind(this));
 
     child.stderr.on('data', function (data) {
-      console.log('Heroku [hopefully standard] reporting errors...  Please continue to wait...');
+      // console.log('Heroku processing...  Please continue to wait...');
     });
     child.stdout.on('data', function(data) {
       this.log(data.toString());

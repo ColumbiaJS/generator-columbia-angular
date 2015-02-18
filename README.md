@@ -13,9 +13,11 @@ This generator uses Sass with Compass for preprocessing stylesheets.  In order t
 brew install rbenv
 brew install rbenv-gem-rehash
 
-1. Install ruby
-2. Install Sass and Compass
-3. While we're at it, let's just install a bunch of useful gems:
+1. Install MongoDB
+2. Install ruby
+3. Install Sass and Compass
+4. Install hub: `$ brew install hub` or for windows you may have to install hub from source: https://github.com/github/hub.  For Windows users, you may also be able to install it through Chcolatey [using this project](https://github.com/twsouthwick/github-cli-nuget)
+5. While we're at it, let's just install a bunch of useful gems:
 
 ```sh
 gem install sass
