@@ -132,7 +132,7 @@
       }
     });
     grunt.registerTask('reload', function() {
-      grunt.task.run(['wiredep', 'injector', 'newer:jshint', 'test:client']);
+      grunt.task.run(['wiredep', 'injector:scripts', 'newer:jshint', 'test:client']);
     });
     grunt.registerTask('addchangelog', 'create changelog', function() {
       var nowrite = grunt.option('no-write'),
