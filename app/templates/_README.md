@@ -33,6 +33,8 @@
   - [★ Logout](#★-logout)
 - [Obtaining OAuth Keys](#obtaining-oauth-keys)
 - [Deploying to Heroku](#deploying-to-heroku)
+  - [Deploying to Heroku the first time](#deploying-to-heroku-the-first-time)
+  - [Subsequent heroku deploys.](#subsequent-heroku-deploys)
 - [DEVELOPMENT PROCESS](#development-process)
   - [Semantic Versioning](#semantic-versioning)
   - [RELEASING NEW VERSIONS:](#releasing-new-versions)
@@ -293,6 +295,12 @@ Additional info can be found here:
 
 ## Deploying to Heroku
 
+### Deploying to Heroku the first time
+
+As mentioned above, if this app was generated using the columbia-angular generator, then you should be able to simply run:
+
+yo columbia-angular:deploy to set up git, github, and heroku all in one go. Your heroku should be deployed from the separate git repo in the `dist/` folder. If for some reason this did not work, you should be able to create a manual deploy using the commands below.  However, you will have to make sure to generate the appropriate files in dist/ first using `$ grunt build` and creating a git repo in the dist/ folder:
+
 ```$ heroku create```
 ```$ git push heroku master```
 ```$ heroku ps:scale web=1```
@@ -301,6 +309,17 @@ Additional info can be found here:
 Create a Procfile with ```web: node server.js```
 Set the config vars for heroku with ```$ heroku config:set ENV_VAR=env_var_value```
 (this should include everything in .env -> APP_SECRET, TOKEN_SECRET, MONGOLAB_URI, etc.)
+
+### Subsequent heroku deploys.
+
+Subsequent deployments to heroku can be achieved using:
+
+```sh
+$ grunt build
+$ grunt buildcontrol:heroku
+```
+
+You can check that everything is working by opening heroku with `$ cd dist && heroku open && cd ..`
 
 ## DEVELOPMENT PROCESS
 
