@@ -13,7 +13,7 @@
   },
   "engines": {
     "node": "0.10.x",
-    "npm": "1.4.x"
+    "npm": "2.6.x"
   },
   "keywords": [
     "MEAN",
@@ -63,6 +63,7 @@
     "grunt-contrib-clean": "^0.6.0",
     "grunt-express-server": "^0.4.17",
     "grunt-karma": "^0.8.3",
+    "grunt-ng-annotate": "^0.10.0",
     "grunt-open": "^0.2.3",
     "grunt-protractor-runner": "^1.1.0",
     "grunt-wiredep": "^1.8.0",
@@ -86,7 +87,6 @@
     "grunt-contrib-concat": "^0.5.0",
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-copy": "^0.6.0",
-    "grunt-ng-annotate": "^0.9.2",
     "grunt-angular-templates": "^0.5.7",
     "codeclimate-test-reporter": "0.0.4",
     "should": "^4.1.0",
