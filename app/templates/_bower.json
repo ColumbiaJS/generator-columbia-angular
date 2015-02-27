@@ -49,7 +49,7 @@
     "angular-ui-utils": "~0.2.1",
     "angular-ui-select": "~0.9.6",
     "angular-toastr": "~0.5.2",
-    "angular-material": "~0.7.1",
+    "angular-material": "~0.8.1",
     "angular-bootstrap": "~0.12.0",
     "satellizer": "0.6.0"
   },
