@@ -1,3 +1,17 @@
+<a name="1.2.4"></a>
+### 1.2.4 (2015-02-28)
+
+
+#### Bug Fixes
+
+* **Gruntfile:** enable grunt bump task by including in missing require statements (for semver, e ([d0bc3c48](https://github.com/columbiajs/generator-columbia-angular/commit/d0bc3c48246a237e551990d8de8fe20763f61ed0))
+
+
+#### Features
+
+* **buildcontrol:** enable buildcontrol throught jit mapping for grunt-build-control ([6c1d8a82](https://github.com/columbiajs/generator-columbia-angular/commit/6c1d8a82c6bfba370d3222beeaa761d5f9a92082))
+
+
 <a name="1.2.3"></a>
 ### 1.2.3 (2015-02-18)
 
