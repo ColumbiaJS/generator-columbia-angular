@@ -2,6 +2,11 @@
   // Generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> <%= pkg.version %>
   'use strict';
 
+  var shell  = require('shelljs'),
+      semver = require('semver'),
+      Q      = require('q'),
+      chalk  = require('chalk');
+
   module.exports = function(grunt) {
     var justInTimeStaticMappings = { // for plugins that can't be resolved in auto mapping
       protractor    : 'grunt-protractor-runner',
